@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Groceries Website</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body class="body">
+
+<!-- Navigation -->
+    <nav class="navigation">
+      <img class="logo" alt="weblogo" src="assets/logo.png" />
+      <div class="menu">
+        <a href="#main">Home</a>
+        <a href="#package">Our Packages</a>
+        <a href="#call">Contact Us</a>
+      </div>
+    </nav>
+
+<!-- Homepage -->
+    <section class="main" id="main">
+        <main class="content">
+            <h1>Your Friendly Neighborhood <span>E-Groceries</span></h1>
+            <p>Lorem ipsum dolor sit amet consestetur adipiscing elit. Accusantium, enim.</p>
+            <a href="#package" class="cta">Shopping Now!</a>
+        </main>
+    </section>
+
+<!-- Package -->
+    <section id="package" class="package">
+        <h2>Our Packages!</h2>
+            <div>
+            <img class="img-slideshow" src="assets/Vegetables.jpg" />
+            <img class="img-slideshow" src="assets/Fruits.jpg" />
+            <img class="img-slideshow" src="assets/Grocer.jpg" />
+            </div>
+            <div class="tombol">
+                <button id="prev" onclick="plusDivs(-1)">Previous</button>
+                <button id="next" onclick="plusDivs(1)">Next</button>
+            </div>
+    </section>
+
+<!-- Call -->
+    <section id="call" class="call">
+        <div class="contact">
+            <h2>Contact Us!</h2>
+            <p>Informations about your purchase will be sent to your email</p>
+            <div class="nama">
+                <h3>Your Name</h3>
+                <input id= "input-name" name="name" type="text" required="true" placeholder="Name"/>
+                <p id="name-error" class="error-message"></p>
+            </div>
+            <div class="email">
+                <h3>Your E-mail</h3>
+                <input id= "input-email" name="mail" type="text" required="true" placeholder="E-mail"/>
+                <p id="email-error" class="error-message"></p>
+            </div>
+            <div class="option">
+                <h3>What are you interested in?</h3>
+                <select>
+                    <option>-Select Option-</option>
+                    <option>Vegetables</option>
+                    <option>Fruits</option>
+                    <option>Grocery</option>
+                </select>
+            </div>
+            <div>
+                <button id="tombol-kirim">Send</button>
+            </div>
+        </div>
+        <div class="offer">
+            <h2>What we offer</h2>
+            <ol type="1">
+                <li><b>Time-saving,</b> e-grocery eliminates the need for customers to spend time traveling to and from the store, waiting in line to check out, and searching for items in the store.</li>
+                <li><b>Higher Quality for Fruit and Vegetables,</b> ordering fruits and vegetables online can also allow customers to get higher quality produce because it can be better protected from damage.</li>
+            </ol>
+        </div>
+    </section>
+
+      <script src="js/script.js"></script>
+    </main>
+  </body>
+</html>
